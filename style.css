@@ -115,7 +115,34 @@
     width: 100%;
 }
 
+/* ******************************** */
+/* Featured in section */
+/* ******************************** */
+.featured{
+    padding: 4.8rem 0 3.2rem 0;
+}
+.container{}
+.heading--featured--in{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: .75px;
+    text-transform: uppercase;
+    margin-bottom: 2.4rem;
+    color: #888;
+}
+.logos{
+    display: flex;
+    justify-content: space-around;
+}
 
+.logos img{
+    height: 3.2rem;
+    /* tricks to make images grey */
+    filter: brightness(0);
+    opacity: .5;
+
+}
 
 /* ******************************** */
 /* How it works section */
