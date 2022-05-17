@@ -1,109 +1,4 @@
- /*
- ---01 Typography system
- 
--FONT SIZE SYSTEM (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
- 
- -Font Weight
- default:400
 
- -Line Height
- default:1
- 
- 
-
-
- ---02 Colors
-
- -Primary:#e67e22
- -Tints:#fdf2e9
- -Shades:#cf711f
- -Accents:
- -Greys: #555
-         #333
-
-
- ---05 Shaows
-
-
- ---06 Border-radius
-
-
- ---07 whitespace
--SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
- */
-html{
-     /* 1rem =10px */
-    font-size: 62.5%;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family:"Rubik", sans-serif;
-    line-height: 1;
-    color: #555;
-    font-weight: 400;
-}
-
-/* ******************************** */
-/* General components */
-/* ******************************** */
-.heading-primary{
-    font-size: 5.2rem;
-    font-weight: 700;
-    letter-spacing: -.5px;
-    line-height: 1.05;
-    color: #333;
-    margin-bottom: 3.2rem;
-}
-
-.margin-right-small{
-    margin-right: 1.6rem;
-}
-
-.btn:link,
-.btn:visited{
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 1.6rem 3.2rem;
-    display: inline-block;
-    border-radius: 9px;    
-
-    /* Put transition on the original element */
-    transition: background-color .3s;
-}
-
-.btn--full:link,
-.btn--full:visited{
-    background-color: #e67e22;
-    color: #fff;
-}
-
-.btn--full:hover,
-.btn--full:active{
-    background-color: #cf711f;
-}
-
-.btn--outline:link,
-.btn--outline:visited{
-    background-color: #fff;
-    color: #555;
-}
-
-.btn--outline:hover,
-.btn--outline:active{
-    background-color: #fdf2e9;
-
-    /* Trick to add border inside*/
-    box-shadow: inset 0 0 0 3px #fff;
-}
 /* ******************************** */
 /* Header */
 /* ******************************** */
@@ -223,7 +118,59 @@ body{
 
 
 /* ******************************** */
+/* How it works section */
 /* ******************************** */
+.section--how{
+    padding: 9.6rem 0;
+}
+
+.step-number{
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: #ccc;
+    margin-bottom: 1.2rem;
+}
+
+.steps-details{
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+.steps-img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.steps-img-box::before,
+.steps-img-box::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+/* pseudo elements don't work on image */
+.steps-img-box::before{
+    width: 60%;
+    /* a trick to add height with % value */
+    /* the width of parent's element */
+    padding-bottom: 60%;
+    background-color: #fdf2e9;
+    z-index: -2;
+}
+
+.steps-img-box::after{
+    width: 45%;
+    padding-bottom: 45%;
+    background-color: #fae5d3;
+    z-index: -1;
+}
+.step-img{
+    width: 35%;
+}
+
+
 /* ******************************** */
 /* ******************************** */
 /* ******************************** */
