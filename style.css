@@ -16,10 +16,11 @@
  ---02 Colors
 
  -Primary:#e67e22
- -Tints:
- -Shades:
+ -Tints:#fdf2e9
+ -Shades:#cf711f
  -Accents:
  -Greys: #555
+         #333
 
 
  ---05 Shaows
@@ -32,6 +33,10 @@
 -SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
  */
+html{
+     /* 1rem =10px */
+    font-size: 62.5%;
+}
 
 *{
     margin: 0;
@@ -40,8 +45,116 @@
 }
 
 body{
-    font-family: sans-serif;
+    font-family:"Rubik", sans-serif;
     line-height: 1;
     color: #555;
     font-weight: 400;
 }
+
+.section-hero{
+    background-color: #fdf2e9;
+    padding: 9.6rem 0;
+}
+
+.hero{
+    max-width: 130rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.heading-primary{
+    font-size: 5.2rem;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    line-height: 1.05;
+    color: #333;
+    margin-bottom: 3.2rem;
+}
+
+.hero-description{
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    display: inline-block;
+    border-radius: 5px;    
+
+    /* Put transition on the original element */
+    transition: background-color .3s;
+}
+
+.btn--full:link,
+.btn--full:visited{
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active{
+    background-color: #cf711f;
+}
+
+.btn--outline:link,
+.btn--outline:visited{
+    background-color: #fff;
+    color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active{
+    background-color: #fdf2e9;
+
+    /* Trick to add border inside*/
+    box-shadow: inset 0 0 0 3px #fff;
+}
+
+.delivered-meals{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 8rem;
+}
+.delivered-imgs{
+    display: flex;
+}
+
+.delivered-imgs img{
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-right: -1.2rem;
+}
+
+.delivered-imgs img:last-child{
+    margin: 0;
+}
+
+.delivered-text{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.delivered-text span{
+    color: #cf711f;
+    font-weight: 700;
+}
+
+.hero-img{
+    width: 100%;
+}
+
+.margin-right-small{
+    margin-right: 1.6rem;
+}
+
