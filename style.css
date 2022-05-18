@@ -276,26 +276,7 @@
 
 }
 
-.diets
-.list{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
 
-}
-.list-item{
-    font-size: 1.8rem;
-    display: flex;
-    gap: 1.6rem;
-    align-items: center;
-}
-
-.list-icon{
-    height: 3rem;
-    width: 3rem;
-    color: #e67e22;
-}
 
 .all-receipt{
     text-align: center;
@@ -362,11 +343,55 @@
 }
 
 
+/* ******************************** */
+/* Pricing section */
+/* ******************************** */
+.section--pricing{
+    padding: 9.6rem 0;
+}
 
+.pricing-plan{
+    
 
+}
 
+.plan-header{
+    text-align: center;
+    margin-bottom: 4.8rem;
+}
+.plan-name{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #cf711f;
+    text-transform: uppercase;
+    margin-bottom:3.2rem;
+    letter-spacing: .75;
+}
 
+.plan-price{
+    font-size: 6.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.6rem;
+}
 
+.plan-price span{
+    font-size:3rem;
+    margin-right: .8rem;
+    font-weight: 500;
+}
 
+.plan-text{
+    color: #6f6f6f;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    
+    
+}
+
+.plan-sign-up{
+    text-align: center;
+    margin-top: 4.8rem;
+}
 
 

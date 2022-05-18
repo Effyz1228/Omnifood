@@ -139,16 +139,6 @@ strong{
 }
 
 
-.margin-right-small{
-   margin-right: 1.6rem;
-}
-.margin-bottom-md{
-    margin-bottom: 4.8rem;
-}
-
-.text-center{
-    text-align: center;
-}
 
 .btn:link,
 .btn:visited{
@@ -202,4 +192,38 @@ strong{
 .link:active{
     color: #cf711f;
     border-bottom: 1px solid transparent;
+}
+
+.list{
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 1.6rem;
+
+}
+.list-item{
+   font-size: 1.8rem;
+   display: flex;
+   gap: 1.6rem;
+   align-items: center;
+}
+
+.list-icon{
+   height: 3rem;
+   width: 3rem;
+   color: #e67e22;
+}
+
+
+/* helper classes */
+
+.margin-right-small{
+   margin-right: 1.6rem;
+}
+.margin-bottom-md{
+    margin-bottom: 4.8rem;
+}
+
+.text-center{
+    text-align: center;
 }
