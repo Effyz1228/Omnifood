@@ -143,7 +143,7 @@ strong{
 }
 
 
-
+.btn,
 .btn:link,
 .btn:visited{
    text-decoration: none;
@@ -152,6 +152,11 @@ strong{
    padding: 1.6rem 3.2rem;
    display: inline-block;
    border-radius: 9px;    
+
+   /* only for .btn */
+   border: none;
+   cursor: pointer;
+   font-family: inherit;
 
    /* Put transition on the original element */
    transition: all .3s;
@@ -196,6 +201,26 @@ strong{
 .link:active{
     color: #cf711f;
     border-bottom: 1px solid transparent;
+}
+
+.btn--form {
+   background-color: #45260a;
+   color: #fdf2e9;
+   align-self: end;
+   padding: 1.2rem;
+}
+
+.btn--form:hover{
+   background-color: #fff;
+   color: #555;
+}
+
+
+
+/* get rid of the ugly focus default */
+* :focus{
+   outline: none;
+   box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 .list{
