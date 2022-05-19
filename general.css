@@ -55,6 +55,7 @@ box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,.075);
    font-size: 62.5%;
    /* hidden the mobile nav that is moved to the right */
    overflow-x: hidden;
+   scroll-behavior: smooth;
 }
 
 *{
