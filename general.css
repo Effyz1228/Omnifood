@@ -16,7 +16,7 @@
  1.05
  1.2
  paragraph default 1.6
- 
+ large:1.8
 
 
  ---02 Colors
@@ -53,6 +53,8 @@ box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,.075);
  html{
     /* 1rem =10px */
    font-size: 62.5%;
+   /* hidden the mobile nav that is moved to the right */
+   overflow-x: hidden;
 }
 
 *{
@@ -66,6 +68,8 @@ body{
    line-height: 1;
    color: #555;
    font-weight: 400;
+   /* hidden the mobile nav that is moved to the right */
+   overflow-x: hidden;
 }
 
 strong{
@@ -240,6 +244,7 @@ strong{
    display: flex;
    gap: 1.6rem;
    align-items: center;
+   line-height: 1.2s;
 }
 
 .list-icon{
